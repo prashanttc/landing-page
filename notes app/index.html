@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head"><img src="images/notes.png" class="book"><h1>Notes</h1></div>
+        <button id="addnote"><img src="images/edit.png"> Create Note</button>
+        <button class="clear" id="clear"> Clear All</button>
+
+
+        <div class="notes-container">
+            <!-- <p contenteditable="true" id="input" class="input"> <img src="images/delete.png" class="delete"></p> -->
+        </div> 
+    </div>
+    
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("keydown" , event =>{
+        if(event.key === "enter"){
+            document.execCommand("insertLineBreak");
+            event.preventDefault();
+        }
+    })</script>
+</body>
+</html>
