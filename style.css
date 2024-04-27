@@ -25,15 +25,14 @@ header{
     min-height: 100%;
 }
 .buttons{
-    margin-left: 5vw;
+    margin-left: 5vh;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     width: 30%;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    gap: 70px;
+    gap: 40px;
     margin-top: 15vh;
     
 }
@@ -73,4 +72,7 @@ background: linear-gradient(180deg, rgba(69,255,0,1) 42%, rgba(0,0,0,1) 100%);
 a{
     text-decoration: none;
     color: #fff;
+}
+.qrcode i{
+margin-left: 5px;
 }
